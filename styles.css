@@ -1,5 +1,96 @@
 body {
   margin: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  overflow-x: hidden;
+}
+
+@keyframes hop-down {
+  0% {
+    transform: scale(.1) translateY(200px);
+  }
+
+
+  100% {
+    transform: scale(1) translateY(0px;);
+  }
+
+}
+
+.pop-up-layer {
+  opacity: 0%;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background: rgba(44, 62, 80,.6);
+  z-index: 100;
+}
+
+.pop-up {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  height: 15rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  border-radius: 16px;
+  box-shadow: 0 4px 3px rgba(0,0,0,.3);
+  z-index: 10000000;
+  animation: hop-down;
+  animation-duration: 100ms;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.pop-up-title {
+  position: absolute;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
+  background: white;
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  font-family: "Roboto";
+}
+
+.pop-up-sub {
+  padding-top: 4rem;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  margin-top: 0rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  font-size: 20px;
+  transition: all 200ms;
+  cursor: pointer;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-right: 9px;
+}
+
+.close-btn:hover {
+  background: #c0392b;
 }
 
 
@@ -15,13 +106,14 @@ body {
 }
 
 .nav-links {
+  height: 50px;
+  width: 100%;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  height: 40px;
-  width: 100%;
-  background: green;
+  font-family: "Roboto";
 }
 
 .nav-btn.logo {
@@ -45,7 +137,7 @@ transform: scale(1.1) rotate(5deg) translateX(10px);
 
 
 .nav-btn.right {
-  margin-left: 90%;
+  margin-left: 80%;
   transition: all 300ms;
 }
 
@@ -354,4 +446,180 @@ panel {
 
 .btn-subscribe:hover {
   transform: scale(1.05);
+}
+
+.testimonials {
+  margin-top: -2rem;
+  height: 80vh;
+  width: 100%;
+  background: #ecf0f1;
+}
+
+.testimonial-title {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.tests {
+  position: absolute;
+  width: 300%;
+  display: flex;
+  transition: all 400ms;
+}
+
+.tests.first {
+  right: -200%;
+}
+
+.tests.second {
+  right: -100%;
+}
+
+.tests.third {
+  right: 0%;
+}
+
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.test1 {
+  position: absolute;
+  left: 0;
+}
+
+.test2 {
+  position: absolute;
+  left: 33%;
+}
+
+.test3 {
+  position: absolute;
+  left: 66%;
+}
+
+
+.testimonial-image {
+  border: solid 8px white;
+  border-radius: 50%;
+  height: 272px;
+  width: 272px;
+}
+
+.testimonial-quote {
+  margin-top: 1rem;
+  border: solid 15px white;
+  border-radius: 2px;
+  background: white;
+}
+
+.testimonial-quote p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.dots {
+  align-self: baseline;
+  margin-top: 28rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  border: solid 1px black;
+  border-radius: 100%;
+  height: 8px; width: 8px;
+  margin-right: 1rem;
+  transition: all 200ms;
+}
+
+.dot:hover {
+  background: black;
+}
+
+.subscribe-3 {
+  height: 70vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://imgix.bustle.com/elite-daily/2015/04/05214708/kidcudi10.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer {
+  height: 30vh;
+  margin: 0;
+  background: #34495e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cta p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.footer-copyright {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.more-links {
+  cursor: pointer;
 }
