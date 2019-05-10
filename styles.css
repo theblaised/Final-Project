@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+}
+
+
+.nav-bar {
+  z-index:10;
+  width: 100%;
+  box-shadow: 0px 0px 1px rgba(0,0,0,.3);
+}
+
+.navbar {
+  z-index:10;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background: green;
+}
+
+.nav-btn.logo {
+  transition: all 300ms;
+}
+
+.nav-btn.logo:hover {
+  transform: scale(1.1) rotate(5deg) translateX(10px);
+
+}
+
+.nav-btn.middle {
+  margin: center;
+  transition: all 300ms;
+}
+
+
+.nav-btn.middle:hover {
+transform: scale(1.1) rotate(5deg) translateX(10px);
+}
+
+
+.nav-btn.right {
+  margin-left: 90%;
+  transition: all 300ms;
+}
+
+.nav-btn.right:hover {
+  transform: scale(1.1) rotate(3deg) translateX(10px);
+}
+
+
+.hero {
+  height: calc(99vh - 50px);
+  width: 100%;
+  background: linear-gradient(rgba(44, 62, 90,.6), rgba(44, 62, 90,.6)), url('https://image.freepik.com/foto-gratis/taza-cafe-mesa-madera-vieja-fondo-amante-cafe_7423-274.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay-text {
+  z-index: 5;
+  height: calc(100vh - 50px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-overlay-text h1 {
+  margin-top: 0rem;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+
+.btn-cta {
+  background-color: rgba(253, 253, 253, 1);
+  color: #616161;
+  border-radius: 40px;
+  border: 1px solid #C1C1C1;
+  padding: 10px 0;
+  text-decoration: none;
+  width: 10rem;
+  text-align: center;
+  transition: all 200ms;
+  box-shadow: 0 2px 0px rgba(0,0,0,.3);
+}
+
+.btn-cta:hover {
+  box-shadow: 0 2px 1px rgba(0,0,0,.3);
+}
+
+.gallery-sec {
+  /*padding: .3rem;*/
+  margin-right: .3rem;
+  height: 130vh;
+  background: #ecf0f1;
+  height: 130vh;
+  width: 100%;
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gallery {
+  height: 100%;
+  width: 90%;
+  /*overflow-x: hidden;*/
+  display: grid;
+  grid-gap: 10px;
+  perspective: 800px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+}
+
+panel {
+  /* needed for the flex layout*/
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 1px 2px 6px rgba(0,0,0,.3);
+  transition: all 300ms;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+}
+
+.panel:hover {
+  transform: scale(1.01) translateY(-5px) rotateX(10deg) rotateY(2deg) skewY(4deg);
+  box-shadow: 1px 4px 9px rgba(0,0,0,.5);
+  z-index: 3;
+}
+
+
+
+
+.tall-panel {
+  grid-row-end: span 2;
+}
+
+.g-header
+ {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
+
+.gallery > * {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
+.g-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://farma.health/wp-content/uploads/2018/09/shutterstock_323518031.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+.a {
+  background: url('https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/coffee-joint.jpg');
+  background-size: cover;
+}
+
+.b {
+  background: url('https://images1.laweekly.com/imager/u/745xauto/7134984/kiva_terra_bites_120mg_tin_white_background_open_tin_with_l.jpg');
+  background-size: cover;
+}
+
+.c {
+  background: url('https://www.sprinklesforbreakfast.com/images/confetti-cake-pops-1.jpeg');
+  background-position: -250px;
+}
+
+.d {
+  background: url('https://media1.fdncms.com/stranger/imager/u/large/34369508/0k6a3827.jpg');
+  background-size: cover;
+  background-position: -75px;
+}
+
+.e {
+  background: url('https://images.weedmaps.com/products/000/033/027/avatar/large/ivxx_-_ak-47_sugar_wax_3.jpg');
+  background-size: cover;
+  background-position: -25px;
+}
+
+.f {
+  background: url('https://tipbuzz.com/wp-content/uploads/Rose-Apple-Danish-.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -15px;
+}
+
+
+.g {
+  background: url('https://ordercbdwater.com/wp-content/uploads/2019/04/436_SpringLife_Hemp-247x296.jpg');
+  background-position: -100px;
+  background-size: cover;
+}
+
+.h {
+  background: url('https://africanbites.com/wp-content/uploads/2012/11/IMG_5013.jpg');
+  background-size: cover;
+}
+
+.i {
+  background: url('https://res.cloudinary.com/woahstorklearn/image/upload/c_crop,h_494,w_879,x_72,y_0/h_381,w_678/v1479765582/cannabis_and_coffee_zti54y.jpg');
+  background-size: cover;
+  background-position: -100px;
+}
+
+.j {
+  background: url('https://i.ebayimg.com/images/g/Tj0AAOSwIABcQMbx/s-l300.jpg');
+  background-position: -50px;
+}
+
+.panel div {
+  background: rgba(0,0,0,.3);
+  padding: 5px;
+  color: white;
+}
+
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+
+@supports (display: grid) {
+  .gallery > * {
+    margin: 0;
+  }
+}
+
+
+
+
+
+.clients {
+  height: 10rem;
+  width: 100%;
+  background: #ecf0f1;
+}
+
+.client-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.clients-header {
+  margin: 0;
+  padding-top: 1.1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: roboto;
+  font-weight: 420;
+}
+
+.client-images img {
+  transition: all 200ms;
+}
+
+.client-images img:hover {
+  transform: scale(1.2);
+}
+
+.subscribe {
+   height: 70vh;
+   width: 100%;
+   background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://i2.wp.com/www.thetrentonline.com/wp-content/uploads/2013/12/Snoop-Lion-The-Trent.jpg?fit=1536%2C1171&ssl=1');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+ }
+
+ .subscribe h1 {
+   font-size: 4rem;
+   text-align: center;
+   margin-bottom: 1rem;
+   font-family: roboto;
+   font-weight: 400;
+ }
+
+ .subscribe h3 {
+   margin: 0;
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   font-family: roboto;
+   font-weight: 200;
+ }
+
+ .form-control {
+  border-radius: 4px;
+  border: solid 1px gray;
+  font-size: 2rem;
+  padding: .3rem;
+  padding-left: 1rem;
+  transition: all 200ms;
+}
+
+.btn-subscribe {
+  margin-left: 1rem;
+  font-size: 2rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: none;
+  border-radius: 4px;
+  color: green;
+  background-color: white;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+
+.btn-subscribe:hover {
+  transform: scale(1.05);
+}
